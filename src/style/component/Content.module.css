@@ -1,0 +1,18 @@
+.wrapContent {
+    display: flex;
+    justify-content: center;
+    background-color: #a49594;
+    color: #3d3d3d;
+}
+
+.wrapContent > .container {
+    width: 65%;
+    background-color: white;
+    min-height: 100vh;
+    margin: 25px 0;
+    border: 1px solid #6f6665;
+}
+
+.wrapContent > .container > div {
+    margin: 20px 25px;
+}

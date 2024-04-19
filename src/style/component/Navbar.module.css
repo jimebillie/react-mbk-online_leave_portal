@@ -1,0 +1,56 @@
+.wrapNav {
+    background-color: #6b1a18;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 7px 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
+}
+
+.wrapNav > .container {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapNav > .container > .left > img {
+    width: 60px;
+}
+
+.wrapNav > .container > .right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.wrapNav > .container > .right > ul {
+    display: flex;
+    list-style: none;
+}
+
+.wrapNav > .container > .right > ul > li {
+    margin-left: 30px;
+    cursor: pointer;
+    position: relative;
+}
+.wrapNav > .container > .right > ul > li > a{
+    color: unset;
+    text-decoration: unset;
+}
+
+.wrapNav > .container > .right > ul > li>a:after {
+    content: "";
+    width: 0;
+    min-height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.wrapNav > .container > .right > ul > li>a:hover:after {
+    width: 100%;
+}
+

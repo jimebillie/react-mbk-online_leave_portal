@@ -12,8 +12,13 @@
     display: flex;
     justify-content: space-between;
 }
+@media (max-width: 768px) {
+    .wrapNav > .container {
+        width: 90%;
+    }
+}
 
-.wrapNav > .container > .left > img {
+.wrapNav > .container > .left > a >img {
     width: 60px;
 }
 
@@ -52,5 +57,42 @@
 
 .wrapNav > .container > .right > ul > li>a:hover:after {
     width: 100%;
+}
+.bergerBar{
+    display: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 3px 15px;
+    margin: 5px 0;
+    border: 1px solid white;
+    background-color: #883532;
+}
+
+@media (max-width: 768px) {
+    .wrapNav > .container > .right {
+        display: none;
+        justify-content: start;
+        align-items: center;
+        position: absolute;
+        top: 78px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        color: #3d3d3d;
+        border-radius: 0 0 20px 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    }
+    .wrapNav > .container > .right > ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapNav > .container > .right > ul > li{
+        margin: 10px 0;
+    }
+    .bergerBar{
+        display: flex;
+        align-items: center;
+    }
+
 }
 

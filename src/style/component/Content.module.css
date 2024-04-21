@@ -3,14 +3,19 @@
     justify-content: center;
     background-color: #a49594;
     color: #3d3d3d;
+    min-height: 100vh;
 }
 
 .wrapContent > .container {
     width: 65%;
     background-color: white;
-    min-height: 100vh;
     margin: 25px 0;
     border: 1px solid #6f6665;
+}
+@media (max-width: 768px) {
+    .wrapContent > .container {
+        width: 90%;
+    }
 }
 
 .wrapContent > .container > div {

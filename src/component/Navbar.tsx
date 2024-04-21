@@ -1,15 +1,27 @@
 import styles from "../style/component/Navbar.module.css"
 import {Link} from "react-router-dom";
+import {useState} from "react";
 
 export default function Navbar() {
+    const [toggleNav, setToggleNav] = useState<any | null>(null);
+
+
     return (
         <>
             <div className={styles.wrapNav}>
                 <div className={styles.container}>
                     <div className={styles.left}>
-                        <img src="/logo/Mattel-brand.svg.png" alt=""/>
+                        <Link to={"/"}>
+                            <img src="/logo/Mattel-brand.svg.png" alt=""/>
+                        </Link>
                     </div>
-                    <div className={styles.right}>
+                    <div className={styles.bergerBar}
+                         onClick={() => toggleNav === null ? setToggleNav({display: "flex"}) : setToggleNav(null)}>
+                        {
+                            toggleNav === null ? "เมนู" : "ปิดเมนู"
+                        }
+                    </div>
+                    <div className={styles.right} style={toggleNav} >
                         <ul>
                             <li>
                                 <Link to={"/"}>

@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply bg-red-900 text-white w-[100%] mb-5 p-4 rounded-lg text-2xl md:w-[500px] hover:bg-red-800 cursor-pointer
+    shadow-md border-[3px] border-gray-300
+}
